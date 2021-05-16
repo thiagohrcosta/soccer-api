@@ -1,8 +1,8 @@
-class Api::V1::RestaurantsController < Api::V1::BaseController
-  before_action :set_player, only: [ :show ]
+class Api::V1::PlayersController < Api::V1::BaseController
+  before_action :set_player, only: [:show]
 
   def index
-    @restaurants = policy_scope(Restaurant)
+    @players = policy_scope(Player)
   end
 
   def show

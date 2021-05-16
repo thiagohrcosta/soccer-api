@@ -1,8 +1,17 @@
 puts "Destroyng all previous data"
 
 Player.destroy_all
+User.destroy_all
+
+puts "Creating user..."
+
+User.create!(
+  email: "thiago@costa.com",
+  password: "123456"
+)
 
 puts "Creating players..."
+
 
 Player.create!(
   name: "Kylian Mbappé",
@@ -10,7 +19,8 @@ Player.create!(
   nationality: "France",
   club: "Paris Saint-Germain",
   position: "Center-Forward",
-  market_value: "160.000.000"
+  market_value: "160.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -19,7 +29,8 @@ Player.create!(
   nationality: "England",
   club: "Spurs",
   position: "Center-Forward",
-  market_value: "120.000.000"
+  market_value: "120.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -28,7 +39,8 @@ Player.create!(
   nationality: "Norway",
   club: "Borussia Dortmun",
   position: "Center-Forward",
-  market_value: "110.000.000"
+  market_value: "110.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -37,7 +49,8 @@ Player.create!(
   nationality: "Egypt",
   club: "Liverpool",
   position: "Right Winger",
-  market_value: "110.000.000"
+  market_value: "110.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -46,7 +59,8 @@ Player.create!(
   nationality: "Brazil",
   club: "Paris Saint-Germain",
   position: "Left Winger",
-  market_value: "110.000.000"
+  market_value: "110.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -55,7 +69,8 @@ Player.create!(
   nationality: "England",
   club: "Borussia Dortmund",
   position: "Right Winger",
-  market_value: "100.000.000"
+  market_value: "100.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -64,7 +79,8 @@ Player.create!(
   nationality: "England",
   club: "Liverpool",
   position: "Right-Back",
-  market_value: "100.000.000"
+  market_value: "100.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -73,7 +89,8 @@ Player.create!(
   nationality: "Senegal",
   club: "Liverpool",
   position: "Left Winger",
-  market_value: "100.000.000"
+  market_value: "100.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -82,7 +99,8 @@ Player.create!(
   nationality: "England",
   club: "Mancherster City",
   position: "Left Winger",
-  market_value: "100.000.000"
+  market_value: "100.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -91,7 +109,8 @@ Player.create!(
   nationality: "Belgium",
   club: "Mancherster City",
   position: "Attacking Midfield",
-  market_value: "100.000.000"
+  market_value: "100.000.000",
+  user_id: 1
   )
 
 
@@ -101,7 +120,8 @@ Player.create!(
   nationality: "Portugal",
   club: "Mancherster United",
   position: "Attacking Midfield",
-  market_value: "90.000.000"
+  market_value: "90.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -110,7 +130,8 @@ Player.create!(
   nationality: "Germany",
   club: "FC Bayern",
   position: "Defensive Midfield",
-  market_value: "90.000.000"
+  market_value: "90.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -119,7 +140,8 @@ Player.create!(
   nationality: "Slovenia",
   club: "Atlético Madrid",
   position: "Goalkeeper",
-  market_value: "90.000.000"
+  market_value: "90.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -128,7 +150,8 @@ Player.create!(
   nationality: "Belgium",
   club: "Inter Milan",
   position: "Centre-Foward",
-  market_value: "90.000.000"
+  market_value: "90.000.000",
+  user_id: 1
   )
 
 Player.create!(
@@ -137,7 +160,8 @@ Player.create!(
   nationality: "England",
   club: "Manchers United",
   position: "Left Winger",
-  market_value: "85.000.000"
+  market_value: "85.000.000",
+  user_id: 1
   )
 
 puts "Complete..............."
