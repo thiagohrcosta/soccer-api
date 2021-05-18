@@ -1,5 +1,5 @@
 class Api::V1::PlayersController < Api::V1::BaseController
-  acts_as_token_authentication_handler_for User, except: [:index, :show ]
+  acts_as_token_authentication_handler_for User, except: [:index, :show]
   before_action :set_player, only: [:show, :update]
 
   def index
@@ -7,6 +7,17 @@ class Api::V1::PlayersController < Api::V1::BaseController
   end
 
   def show
+  end
+
+  def create
+    @player = Player.new(player_params)
+    # @player.user = current_user
+    authorize @player
+    if @player.save
+      render :show, status: :created
+    else
+      render_error
+    end
   end
 
   def update
@@ -25,7 +36,7 @@ class Api::V1::PlayersController < Api::V1::BaseController
   end
 
   def player_params
-    params.require(:player).permit(:name, :nationality, :club, :position, :market_value)
+    params.require(:player).permit(:name, :nationality, :club, :position, :market_value, :photo, :user_id)
   end
 
   def render_error
