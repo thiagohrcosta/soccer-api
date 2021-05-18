@@ -8,7 +8,7 @@
 ### Gems used:
 
  - Pundit;
-
+ - Simple_token_authentication;
 
 ## API Request
 ![api](https://res.cloudinary.com/dloadb2bx/image/upload/v1621355451/api_vzv6ce.gif)
