@@ -8,7 +8,7 @@
 ### Gems used:
 
  - Pundit;
- -
+
 
 ## API Request
 ![api](https://res.cloudinary.com/dloadb2bx/image/upload/v1621355451/api_vzv6ce.gif)
@@ -46,4 +46,5 @@ This project was building using the **backend as API**, because of that after do
 **May 18**
 
    - Create route added;
-   - Changes policy to allow user to POST
+   - Changes policy to allow user to POST;
+   - Fix typo on seed "Borussia Dortmund";

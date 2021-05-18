@@ -37,7 +37,7 @@ Player.create!(
   name: "Erling Haaland",
   photo: "https://img.a.transfermarkt.technology/portrait/header/418560-1607454139.jpg",
   nationality: "Norway",
-  club: "Borussia Dortmun",
+  club: "Borussia Dortmund",
   position: "Center-Forward",
   market_value: "110.000.000",
   user_id: 1
