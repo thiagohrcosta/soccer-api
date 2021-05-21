@@ -31,6 +31,8 @@ gem 'simple_token_authentication'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
+gem 'rspec-rails', '~> 4.0.1'
+
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
