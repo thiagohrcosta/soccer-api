@@ -13,7 +13,9 @@
 ## API Request
 ![api](https://res.cloudinary.com/dloadb2bx/image/upload/v1621355451/api_vzv6ce.gif)
 
-
+## Tests
+To implement tests on this project was used Rspec gem.
+![tests](https://res.cloudinary.com/dloadb2bx/image/upload/v1621563038/teste1_fgcz99.gif)
 ## How to run this project?
 This project was building using the **backend as API**, because of that after download, you need to open the main folder and run `rails s` to start the backend API. After that, you can use Postman to do get and request.
 
@@ -48,3 +50,8 @@ This project was building using the **backend as API**, because of that after do
    - Create route added;
    - Changes policy to allow user to POST;
    - Fix typo on seed "Borussia Dortmund";
+
+**May 20**
+   - Tests added with Rspec;
+
+
